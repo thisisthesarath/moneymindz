@@ -6,19 +6,19 @@ export const sidebar = [
   {
     path: webRoutes.dashboard,
     key: webRoutes.dashboard,
-    name: 'Dashboard',
+    name: 'Home',
     icon: <Icon component={BiHomeAlt2} />,
   },
   {
     path: webRoutes.users,
     key: webRoutes.users,
-    name: 'Users',
+    name: 'Finances',
     icon: <UserOutlined />,
   },
   {
     path: webRoutes.about,
     key: webRoutes.about,
-    name: 'About',
+    name: 'Forums',
     icon: <InfoCircleOutlined />,
   },
 ];

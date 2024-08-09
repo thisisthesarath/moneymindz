@@ -70,7 +70,7 @@ const Login = () => {
           import.meta.env.VITE_DEMO_MODE === 'true'
             ? {
                 email: 'eve.holt@reqres.in',
-                password: 'password',
+                password: '1234',
               }
             : {}
         }

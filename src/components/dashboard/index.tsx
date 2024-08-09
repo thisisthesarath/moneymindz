@@ -31,10 +31,33 @@ const breadcrumb: BreadcrumbProps = {
   items: [
     {
       key: webRoutes.dashboard,
-      title: <Link to={webRoutes.dashboard}>Dashboard</Link>,
+      title: <Link to={webRoutes.dashboard}>Home</Link>,
     },
   ],
 };
+
+
+const dummyNews = [
+  {
+    title: 'Stock Market Hits All-Time High',
+    description: 'The stock market reached an all-time high today, driven by strong earnings reports and positive economic data.',
+    image: 'https://via.placeholder.com/150',
+    date: '2024-08-09',
+  },
+  {
+    title: 'Federal Reserve Announces Interest Rate Hike',
+    description: 'The Federal Reserve has announced an increase in interest rates to combat rising inflation, affecting borrowing costs across the board.',
+    image: 'https://via.placeholder.com/150',
+    date: '2024-08-08',
+  },
+  {
+    title: 'Tech Giants Report Record Profits',
+    description: 'Several major tech companies have reported record profits for the last quarter, boosting their stock prices and market confidence.',
+    image: 'https://via.placeholder.com/150',
+    date: '2024-08-07',
+  },
+];
+
 
 const Dashboard = () => {
   const [loading, setLoading] = useState<boolean>(true);
@@ -75,7 +98,6 @@ const Dashboard = () => {
       })
       .then((response) => {
         setReviews(
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
           response.data.data.map((rawReview: any) => {
             const review: Review = {
               id: rawReview.id,
@@ -101,19 +123,19 @@ const Dashboard = () => {
           <StatCard
             loading={loading}
             icon={<Icon component={AiOutlineTeam} />}
-            title="Users"
-            number={12}
+            title="Credits"
+            number={12000}
           />
         </Col>
         <Col xl={6} lg={6} md={12} sm={24} xs={24} style={{ marginBottom: 24 }}>
           <StatCard
             loading={loading}
             icon={<Icon component={MdOutlineArticle} />}
-            title="Posts"
-            number={100}
+            title="Balance"
+            number={10000}
           />
         </Col>
-        <Col xl={6} lg={6} md={12} sm={24} xs={24} style={{ marginBottom: 24 }}>
+        {/* <Col xl={6} lg={6} md={12} sm={24} xs={24} style={{ marginBottom: 24 }}>
           <StatCard
             loading={loading}
             icon={<Icon component={BiPhotoAlbum} />}
@@ -144,7 +166,7 @@ const Dashboard = () => {
             title="Reviews"
             number={100}
           />
-        </Col>
+        </Col> */}
         <Col
           xl={12}
           lg={12}
@@ -157,14 +179,14 @@ const Dashboard = () => {
             <StatisticCard.Group direction="row">
               <StatisticCard
                 statistic={{
-                  title: 'XYZ',
-                  value: loading ? 0 : 123,
+                  title: 'Goal',
+                  value: loading ? 0 : 30000,
                 }}
               />
               <StatisticCard
                 statistic={{
-                  title: 'Progress',
-                  value: 'ABC',
+                  title: 'Total Spent',
+                  value: '12000',
                 }}
                 chart={
                   <Progress
@@ -180,29 +202,32 @@ const Dashboard = () => {
             </StatisticCard.Group>
           </Card>
         </Col>
+
+
         <Col
-          xl={12}
-          lg={12}
-          md={12}
+          xl={24}
+          lg={24}
+          md={24}
           sm={24}
           xs={24}
           style={{ marginBottom: 24 }}
         >
+          <h3 style={{ marginBottom: 16 }}>Latest News!</h3>
           <Card bordered={false} className="w-full h-full cursor-default">
             <List
-              loading={loading}
+              loading={false} // Assuming loading is false for the dummy data
               itemLayout="horizontal"
-              dataSource={users}
-              renderItem={(user) => (
+              dataSource={dummyNews}
+              renderItem={(newsItem) => (
                 <List.Item>
                   <List.Item.Meta
                     avatar={
                       <Avatar
-                        shape="circle"
-                        size="small"
+                        shape="square"
+                        size="large"
                         src={
                           <LazyImage
-                            src={user.avatar}
+                            src={newsItem.image}
                             placeholder={
                               <div className="bg-gray-100 h-full w-full" />
                             }
@@ -210,15 +235,24 @@ const Dashboard = () => {
                         }
                       />
                     }
-                    title={`${user.first_name} ${user.last_name}`}
-                    description={user.email}
+                    title={newsItem.title}
+                    description={
+                      <>
+                        <p>{newsItem.description}</p>
+                        <p><small>{new Date(newsItem.date).toLocaleDateString()}</small></p>
+                      </>
+                    }
                   />
                 </List.Item>
               )}
             />
           </Card>
         </Col>
-        <Col
+
+
+
+
+        {/* <Col
           xl={12}
           lg={12}
           md={12}
@@ -260,7 +294,7 @@ const Dashboard = () => {
               ]}
             />
           </Card>
-        </Col>
+        </Col> */}
       </Row>
     </BasePageContainer>
   );
