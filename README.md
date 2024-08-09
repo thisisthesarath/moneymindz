@@ -39,23 +39,13 @@
 - Axios interceptor enabled to handle API authorization.
 - Automated workflow for checking new Pull Request.
 
-## Demo
-
-https://reforge.netlify.app
-
 ### Credentials
 
 - **Email:** `eve.holt@reqres.in`
-- **Password:** `password`
+- **Password:** `1234`
 
 ## Usage
 
-- Clone the project and change directory.
-
-  ```shell
-  git clone https://github.com/arifszn/reforge.git
-  cd reforge
-  ```
 
 - Install dependencies.
 
@@ -71,44 +61,7 @@ https://reforge.netlify.app
 
 - Finally, visit [`http://localhost:5173`](http://localhost:5173) from your browser. Credentials can be found above.
 
-## Config
 
-Settings including app name, theme color, meta tags, etc. can be controlled from one single file **`config.ts`** located at the project's root.
 
-```ts
-//config.ts
-const CONFIG = {
-  appName: 'Reforge',
-  helpLink: 'https://github.com/arifszn/reforge',
-  enablePWA: true,
-  theme: {
-    accentColor: '#818cf8',
-    sidebarLayout: 'mix',
-    showBreadcrumb: true,
-  },
-  metaTags: {
-    title: 'Reforge',
-    description:
-      'An out-of-box UI solution for enterprise applications as a React boilerplate.',
-    imageURL: 'logo.svg',
-  },
-};
 
-export default CONFIG;
-```
-
-## Support
-
-<p>You can show your support by starring this project. ★</p>
-<a href="https://github.com/arifszn/reforge/stargazers">
-  <img src="https://img.shields.io/github/stars/arifszn/reforge?style=social" alt="Github Star">
-</a>
-
-## Contribute
-
-To contribute, see the [Contributing guide](https://github.com/arifszn/reforge/blob/main/CONTRIBUTING.md).
-
-## License
-
-[MIT](https://github.com/arifszn/reforge/blob/main/LICENSE)
 # moneymindz
