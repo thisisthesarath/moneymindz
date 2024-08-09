@@ -2,6 +2,10 @@
 
 - Helizaa.
 - Team No.6
+- Theme:20. Ai Driven Financial Advisor also implemented 24. Personal Finance Management Tool
+- PS: Creating an AI-driven financial advisor web app that helps users manage personal finances, get investment
+advice, and stay informed with the latest financial news, fostering a community of financially empowered
+individuals.
 
 ## Team Details
 
