@@ -1,3 +1,10 @@
+## Team Details
+
+- John Samuel J(Team Leader).
+- Sarath P.
+- Swapna Samanta.
+
+
 ## Features
 
 - Elegant and customizable UI using `Tailwindcss` and `Ant Design`.
