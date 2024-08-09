@@ -44,7 +44,8 @@
   ```shell
   npm run dev
   ```
-
+- Finally, visit ['http://localhost:5003'] from your browser. To get the endpoint.
+- ['/expense', '/predict'] to view the outputs.
 - Finally, visit [`http://localhost:5173`](http://localhost:5173) from your browser. Credentials can be found above.
 
 
