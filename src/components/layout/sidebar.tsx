@@ -21,4 +21,16 @@ export const sidebar = [
     name: 'Forums',
     icon: <InfoCircleOutlined />,
   },
+  {
+    path: webRoutes.webinars,
+    key: webRoutes.webinars,
+    name: 'Webinars',
+    icon: <UserOutlined />,
+  },
+  {
+    path: webRoutes.ai,
+    key: webRoutes.ai,
+    name: 'AI',
+    icon: <UserOutlined />,
+  },
 ];

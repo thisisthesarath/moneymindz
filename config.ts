@@ -7,7 +7,7 @@ enum LayoutType {
 }
 
 const CONFIG = {
-  appName: 'Reforge',
+  appName: 'moneymindz',
   helpLink: 'https://github.com/iBz-04/Dashboard-starter',
   enablePWA: true,
   theme: {
@@ -16,7 +16,7 @@ const CONFIG = {
     showBreadcrumb: true,
   },
   metaTags: {
-    title: 'Reforge',
+    title: 'moneymindz',
     description: 'A dashboard UI solution for Saas and web apps.',
     imageURL: 'logo.svg',
   },

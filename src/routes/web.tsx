@@ -4,5 +4,7 @@ export const webRoutes = {
   logout: '/logout',
   dashboard: '/dashboard',
   users: '/users',
+  webinars: '/webinars',
+  ai: '/ai',
   about: '/about',
 };

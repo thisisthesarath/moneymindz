@@ -41,19 +41,19 @@ const dummyNews = [
   {
     title: 'Stock Market Hits All-Time High',
     description: 'The stock market reached an all-time high today, driven by strong earnings reports and positive economic data.',
-    image: 'https://via.placeholder.com/150',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReAZKrltA6I7YxoUzLdI20GfIGJKUeNbvMBA&s',
     date: '2024-08-09',
   },
   {
     title: 'Federal Reserve Announces Interest Rate Hike',
     description: 'The Federal Reserve has announced an increase in interest rates to combat rising inflation, affecting borrowing costs across the board.',
-    image: 'https://via.placeholder.com/150',
+    image: 'https://d28wu8o6itv89t.cloudfront.net/images/FederalReserveActpng-1596094108897.png',
     date: '2024-08-08',
   },
   {
     title: 'Tech Giants Report Record Profits',
     description: 'Several major tech companies have reported record profits for the last quarter, boosting their stock prices and market confidence.',
-    image: 'https://via.placeholder.com/150',
+    image: 'https://d2eehagpk5cl65.cloudfront.net/img/c800x450-w800-q80/uploads/2023/01/dreamstime_xxl_209504587-800x450.jpg',
     date: '2024-08-07',
   },
 ];

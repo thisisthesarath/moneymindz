@@ -10,6 +10,8 @@ import ProgressBar from '../components/loader/progressBar';
 import RequireAuth from './requireAuth';
 import Login from '../components/auth/Login';
 import About from '../components/demo-pages/about';
+import Webinars from '../components/demo-pages/sessions';
+import AI from '../components/demo-pages/ai';
 
 const errorElement = <ErrorPage />;
 const fallbackElement = <ProgressBar />;
@@ -61,6 +63,14 @@ export const browserRouter = createBrowserRouter([
         path: webRoutes.about,
         element: <About />,
       },
+      {
+        path: webRoutes.webinars,
+        element: <Webinars />,
+      },
+      {
+        path: webRoutes.ai,
+        element: <AI/>,
+      }
     ],
   },
 
